@@ -9,6 +9,9 @@
         text-align: center;
         width: 100%;
     }
+    .nav{
+        position: fixed;
+    }
     table, th, td {
         border: 1px solid black;
     }
@@ -18,10 +21,21 @@
     th, td {
       padding: 3px;
     }
+    body {
+        font-family: Verdana, sans-serif;
+    }
 </style>
 </head>
 <body>
-<h1>James Pohl</h1>
+<div class="nav">
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#reading">Reading</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+</ul> 
+</div>
+<h1 id="home">James Pohl</h1>
 <img src="SelfPhoto.jpg" alt="A Photo of Myself">
 <h2>Personal Info:</h2>
 <ul>
@@ -30,7 +44,7 @@
     <li><b>Current Year at UVU:</b> Sophmore</li>
     <li><b>Favorite Ice Cream:</b> Chocolate</li>
 </ul>
-<h2>My Five Favorite Books</h2>
+<h2 id="reading">My Five Favorite Books</h2>
 <ol>
     <li><i>The Book of Three</i> <a href="https://en.wikipedia.org/wiki/Lloyd_Alexander">Lloyd Alexander</a></li>
     <li><i>Ender's Game</i> <a href="http://www.hatrack.com/">Orson Scott Card</a></li>
@@ -47,7 +61,7 @@
     Bathes stone heads in light<br>
 </p>
 
-<h2>My Personal Interests</h2>
+<h2 id="about">My Personal Interests</h2>
 <p>
     One hobby I have is tabletop gaming, sometimes referred to as pen and paper roleplaying.
     I started sometime around middle school, and has continued to the present day.
@@ -65,7 +79,7 @@
     to do so in Utah. I have had a great time hiking, camping, boating, and fishing in this state.
 </p>
 
-<h2>Class Schedule</h2>
+<h2 id="schedule">Class Schedule</h2>
 <table>
     <tr>
         <th></th>
