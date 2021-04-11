@@ -9,6 +9,13 @@
         text-align: center;
         width: 100%;
     }
+    .nav{
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        background-color: #000;
+        width: 100%;
+    }
     table, th, td {
         border: 1px solid black;
     }
@@ -18,11 +25,27 @@
     th, td {
       padding: 3px;
     }
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    .mass {
+        margin-top: 120px;
+    }
 </style>
 </head>
 <body>
-<h1>James Pohl</h1>
-<img src="SelfPhoto.jpg" alt="A Photo of Myself">
+<div class="nav">
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#reading">Reading</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+</ul> 
+</div>
+
+<div class="mass">
+<h1 id="home">James Pohl</h1>
+<img src="https://github.com/TadPohl/WebDevProject1/blob/main/SelfPhoto.JPG" alt="A Photo of Myself">
 <h2>Personal Info:</h2>
 <ul>
     <li><b>Major:</b> Computer Science</li>
@@ -30,7 +53,7 @@
     <li><b>Current Year at UVU:</b> Sophmore</li>
     <li><b>Favorite Ice Cream:</b> Chocolate</li>
 </ul>
-<h2>My Five Favorite Books</h2>
+<h2 id="reading">My Five Favorite Books</h2>
 <ol>
     <li><i>The Book of Three</i> <a href="https://en.wikipedia.org/wiki/Lloyd_Alexander">Lloyd Alexander</a></li>
     <li><i>Ender's Game</i> <a href="http://www.hatrack.com/">Orson Scott Card</a></li>
@@ -47,7 +70,7 @@
     Bathes stone heads in light<br>
 </p>
 
-<h2>My Personal Interests</h2>
+<h2 id="about">My Personal Interests</h2>
 <p>
     One hobby I have is tabletop gaming, sometimes referred to as pen and paper roleplaying.
     I started sometime around middle school, and has continued to the present day.
@@ -65,7 +88,7 @@
     to do so in Utah. I have had a great time hiking, camping, boating, and fishing in this state.
 </p>
 
-<h2>Class Schedule</h2>
+<h2 id="schedule">Class Schedule</h2>
 <table>
     <tr>
         <th></th>
@@ -172,5 +195,6 @@
 </body>
 <div class="foot">
     <p>Copyright &copy; 2021 &mdash; James Pohl</p>
+</div>
 </div>
 </html>
